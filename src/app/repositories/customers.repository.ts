@@ -1,5 +1,5 @@
-import { Customer } from "../entities/customer/customer";
+import { Customer } from '../entities/customer/customer';
 
-export abstract class CustomersRepository {
-    abstract create(customer: Customer): Promise<void>;
+export interface CustomersRepository {
+    create(customer: Customer): Promise<void>;
 }

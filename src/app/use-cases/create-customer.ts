@@ -1,7 +1,7 @@
-import { BirthDate } from "../entities/customer/birth-date";
-import { Customer } from "../entities/customer/customer";
-import { Name } from "../entities/customer/name";
-import { CustomersRepository } from "../repositories/customers.repository";
+import { BirthDate } from '../entities/customer/birth-date';
+import { Customer } from '../entities/customer/customer';
+import { Name } from '../entities/customer/name';
+import { CustomersRepository } from '../repositories/customers.repository';
 
 interface CustomerRequest {
     name: string;
@@ -23,7 +23,7 @@ export class CreateCustomer {
             birthDate: new BirthDate(birthDate),
         });
 
-        await this.customerRepository.create(customer)
+        await this.customerRepository.create(customer);
 
         return {
             customer

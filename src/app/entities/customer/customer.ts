@@ -1,5 +1,5 @@
-import { BirthDate } from "./birth-date";
-import { Name } from "./name";
+import { BirthDate } from './birth-date';
+import { Name } from './name';
 
 interface CustomerProps {
     name: Name;
@@ -12,18 +12,18 @@ export class Customer {
     ) {}
 
     get name(): Name {
-        return this.props.name
+        return this.props.name;
     }
 
     set name(name: Name) {
-        this.props.name = name
+        this.props.name = name;
     }
 
     get birthDate(): BirthDate {
-        return this.props.birthDate
+        return this.props.birthDate;
     }
 
     set BirthDate(birthDate: BirthDate) {
-        this.props.birthDate = birthDate
+        this.props.birthDate = birthDate;
     }
 }
